@@ -1,0 +1,4 @@
+export const filterMenuItems = (itemType) => menuItems.filter(x => x.type === itemType)
+
+
+const desayunos = filterMenuItems('desayuno')

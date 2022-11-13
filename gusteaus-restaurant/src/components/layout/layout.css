@@ -1,0 +1,8 @@
+.layout {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 3.125rem;
+  background: #742125;
+  color: #fff;
+}
