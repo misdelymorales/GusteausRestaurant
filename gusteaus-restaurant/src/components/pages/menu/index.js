@@ -7,7 +7,7 @@ export function Menu() {
   return (
     <>
       <Layout>
-        <div>Mi menú
+        <div className="mt-12">Mi menú
            
         </div>
       </Layout>
