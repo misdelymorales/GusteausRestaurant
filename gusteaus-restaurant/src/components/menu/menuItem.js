@@ -3,22 +3,30 @@ import style from "./menuItem.style";
 
 function Item() {
   return (
-    <div className={style.contenedorItem}>
-      <img className={style.itemImagen} src="/images/Machas.jpg" alt="machas" />
-      <div className={style.textoItem}>
-        <div className="pr-2">
-          <p className={style.tituloItem}>Machas a la parmesana</p>
-          <p className={style.descripcionItem}>
+    <div className={style.contenedorItem.base}>
+      <img
+        className={style.contenedorItem.itemImagen}
+        src="/images/Machas.jpg"
+        alt="machas"
+      />
+      <div className={style.contenedorItem.textoItem}>
+        <div>
+          <p className={style.contenedorItem.tituloItem}>
+            Machas a la parmesana
+          </p>
+          <p className={style.contenedorItem.descripcionItem}>
             Queso parmesano, Vino blanco y Mantequilla (12 a 15 Uni.)
           </p>
-          <p className={style.precioItem}>$16.990</p>
+          <p className={style.contenedorItem.precioItem}>$16.990</p>
         </div>
-        <div className={style.selectoresCantidad}>
-          <button className={style.btnSelectores}>-</button>
-          <p>1</p>
-          <button className={style.btnSelectores}>+</button>
+        <div className={style.contenedorItem.selectoresCantidad}>
+          <div className="flex flex-row">
+            <button className={style.contenedorItem.btnSelectores}>-</button>
+            <p>1</p>
+            <button className={style.contenedorItem.btnSelectores}>+</button>
+          </div>
           <div>
-            <button className={style.btnAgregar}>Agregar</button>
+            <button className={style.contenedorItem.btnAgregar}>Agregar</button>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
 
 export function Layout({ children, withMenu }) {
   return (
+    <>
     <div className={style.layoutContainer}>
         <div className={style.layoutHeaderLeft}>
           <img
@@ -27,7 +28,10 @@ export function Layout({ children, withMenu }) {
           <ArrowRightOnRectangleIcon className="h-6 w-6 mr-2" />
           {/* <img className="block h-6 mx-2" src="/images/logout.svg" alt="logout"/> */}
         </div>
-      <div className="layoutMain">{children}</div>
+      
     </div>
+    <div className="w-full">{children}</div>
+    </>
+    
   );
 }
