@@ -12,7 +12,7 @@ function Item() {
       <div className={style.contenedorItem.textoItem}>
         <div>
           <p className={style.contenedorItem.tituloItem}>
-            Machas a la parmesana
+          Plato continental: huevos, jamón y queso
           </p>
           <p className={style.contenedorItem.descripcionItem}>
             Queso parmesano, Vino blanco y Mantequilla (12 a 15 Uni.)
@@ -22,7 +22,7 @@ function Item() {
         <div className={style.contenedorItem.selectoresCantidad}>
           <div className="flex flex-row">
             <button className={style.contenedorItem.btnSelectores}>-</button>
-            <p>1</p>
+            <p className="mr-2">1</p>
             <button className={style.contenedorItem.btnSelectores}>+</button>
           </div>
           <div>

@@ -13,6 +13,7 @@ module.exports = {
       // },
         'vino': '#742125', //vinotinto
         'vino-light': 'rgba(116, 33, 37, 0.54)', //vinotinto con opacidad
+        'gray': '#656262',
         'gray-light': '#D9D9D9',
         'blue-light': '#AEB5D0', // btn celente "En Entrega"-cocina
         'mustard': '#CA7F09', // btn mostaza "En Preparación"-cocina
