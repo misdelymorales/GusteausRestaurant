@@ -25,12 +25,9 @@ module.exports = {
         'blue':'#2E5D9A', //btn azul
         'white':'#FFFFFF',
         'fondo': 'linear-gradient(90.22deg, #aeb5d0 27.11%, #ebc2b6 69.07%)', //fondo gradiente
+        'black': '#000000',
     },
-    extend:{
-      height: {
-        '50': '3.125rem',
-      }
-    },
+    extend:{    },
   },
   plugins: [],
 }

@@ -109,7 +109,7 @@ function TabPrincipal() {
         <li className={style.liHoverMenu}>
           <div>Postres</div>
         </li>
-        <li className= {SVGPolylineElement.liMenuUltimo}>
+        <li className= {style.liMenuUltimo}>
           <div>Bebidas</div>
         </li>
       </ul>

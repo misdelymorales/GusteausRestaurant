@@ -1,5 +1,5 @@
 export default {
-    contenedorMenu:"basis-3/4 flex justify-end pr-4 ml-8 ",
+    contenedorMenu:"flex w-full basis-3/4 flex justify-end pr-4 ml-8  ",
     ulMenu: "flex flex-row pt-1 pb-1 text-vino",
     liSeleccionadoMenu: "p-2 pr-4 pl-4 mr-4 bg-vino text-white rounded-md cursor-pointer",
     liHoverMenu: "p-2 pr-4 pl-4 mr-4 hover:bg-vino-light hover:text-white rounded-md cursor-pointer",
@@ -9,7 +9,6 @@ export default {
     tapIzquierdo: "text-vino pt-1 pb-1 basis-1/4 flex flex-row pl-6 justify-start",
     mesaSelector: "pl-3 pr-3 border-2 border-vino rounded-md flex flex-row items-center justify-center",
     seleccionMesa: "h-6 w-6 ml-4 cursor-pointer text-vino",
-    
 
 
 };
