@@ -39,7 +39,7 @@ function SelectorCantidad() {
   const [numClicks, setNumClicks] = useState(1);
 
   const restarItem = () => {
-    setNumClicks(numClicks - 1);
+    if(numClicks>0) setNumClicks(numClicks - 1);
   };
 
   const sumarItem = () => {
@@ -51,13 +51,11 @@ function SelectorCantidad() {
       <div className="flex flex-row">
         <BotonSelector
           texto="-"
-          esBotonDeClick={true}
           manejarClick={restarItem}
         />
         <Contador numClicks={numClicks} />
         <BotonSelector
           texto="+"
-          esBotonDeClick={false}
           manejarClick={sumarItem}
         />
       </div>
