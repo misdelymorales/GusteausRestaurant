@@ -1,5 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import style from "./menuItem.style";
+
+export function ItemComida() {
+  return <Item />;
+}
 
 function Item() {
   return (
@@ -12,38 +17,66 @@ function Item() {
       <div className={style.contenedorItem.textoItem}>
         <div>
           <p className={style.contenedorItem.tituloItem}>
-          Plato continental: huevos, jamón y queso
+            Plato continental: huevos, jamón y queso
           </p>
           <p className={style.contenedorItem.descripcionItem}>
             Queso parmesano, Vino blanco y Mantequilla (12 a 15 Uni.)
           </p>
           <p className={style.contenedorItem.precioItem}>$16.990</p>
         </div>
-        <SelectorCantidad/>
+        <div className={style.contenedorItem.selectoresCantidad}>
+          <SelectorCantidad />
+          <div>
+            <button className={style.contenedorItem.btnAgregar}>Agregar</button>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
-function SelectorCantidad(){
-    return(
-        <>
-        <div className={style.contenedorItem.selectoresCantidad}>
-          <div className="flex flex-row">
-            <button className={style.contenedorItem.btnSelectores}>-</button>
-            <p className="mr-2">1</p>
-            <button className={style.contenedorItem.btnSelectores}>+</button>
-          </div>
-          <div>
-            <button className={style.contenedorItem.btnAgregar}>Agregar</button>
-          </div>
-        </div>
-        </>
-    )
+function SelectorCantidad() {
+  const [numClicks, setNumClicks] = useState(1);
+
+  const restarItem = () => {
+    setNumClicks(numClicks - 1);
+  };
+
+  const sumarItem = () => {
+    setNumClicks(numClicks + 1);
+  };
+
+  return (
+    <>
+      <div className="flex flex-row">
+        <BotonSelector
+          texto="-"
+          esBotonDeClick={true}
+          manejarClick={restarItem}
+        />
+        <Contador numClicks={numClicks} />
+        <BotonSelector
+          texto="+"
+          esBotonDeClick={false}
+          manejarClick={sumarItem}
+        />
+      </div>
+    </>
+  );
 }
 
-//<button>
-
-export function ItemComida() {
-  return <Item />;
+function BotonSelector({ texto, manejarClick }) {
+  return (
+    <button
+      className={style.contenedorItem.btnSelectores}
+      onClick={manejarClick}
+    >
+      {texto}
+    </button>
+  );
 }
+
+function Contador({ numClicks }) {
+  return <div className="mr-2">{numClicks}</div>;
+}
+//{} </> h g H G

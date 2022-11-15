@@ -7,7 +7,7 @@ export default{
         tituloItem:"  uppercase font-bold leading-none text-sm",
         descripcionItem:"leading-none pt-2 text-sm text-gray",
         precioItem:"font-bold pt-3",
-        selectoresCantidad:"flex flex-row item-center justify-between  ",
+        selectoresCantidad:"flex flex-row item-center justify-between cursor-pointer ",
         btnAgregar:"bg-green pl-1 pr-1 ml-1 rounded-md",
         btnSelectores:"bg-gray-light w-4 h-6  mr-2 item-center rounded-md",
     }
