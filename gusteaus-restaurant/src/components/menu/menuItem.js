@@ -19,6 +19,15 @@ function Item() {
           </p>
           <p className={style.contenedorItem.precioItem}>$16.990</p>
         </div>
+        <SelectorCantidad/>
+      </div>
+    </div>
+  );
+}
+
+function SelectorCantidad(){
+    return(
+        <>
         <div className={style.contenedorItem.selectoresCantidad}>
           <div className="flex flex-row">
             <button className={style.contenedorItem.btnSelectores}>-</button>
@@ -29,10 +38,11 @@ function Item() {
             <button className={style.contenedorItem.btnAgregar}>Agregar</button>
           </div>
         </div>
-      </div>
-    </div>
-  );
+        </>
+    )
 }
+
+//<button>
 
 export function ItemComida() {
   return <Item />;
