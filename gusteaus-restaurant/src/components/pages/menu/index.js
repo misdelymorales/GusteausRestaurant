@@ -1,4 +1,5 @@
 import React from "react";
+import { MenuProvider } from "../../../context/menuContext";
 import { Layout } from "../../layout";
 import { ItemComida } from "../../menu/menuItem";
 import { Resumen } from "../../menu/menuResumen";
@@ -11,16 +12,18 @@ export function Menu() {
         <div className="mt-12">
           <MenuTabs />
           <div className="flex flex-row  ">
-            <div className="basis-3/4 pr-4">
-              <div className="grid grid-cols-2 gap-4 pt-4 ">
-                <ItemComida />
-                <ItemComida />
-                <ItemComida />
+            <MenuProvider>
+              <div className="basis-3/4 pr-4">
+                <div className="grid grid-cols-2 gap-4 pt-4 ">
+                  <ItemComida />
+                  <ItemComida />
+                  <ItemComida />
+                </div>
               </div>
-            </div>
-            <div >
-              <Resumen/>
-            </div>
+              <div>
+                <Resumen />
+              </div>
+            </MenuProvider>
           </div>
         </div>
       </Layout>

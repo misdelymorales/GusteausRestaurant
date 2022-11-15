@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
+import { MenuContext } from "../../context/menuContext";
 import style from "./menuItem.style";
 
 export function ItemComida() {
@@ -36,28 +37,30 @@ function Item() {
 }
 
 function SelectorCantidad() {
+  const { setSeleccion } = useContext(MenuContext);
   const [numClicks, setNumClicks] = useState(1);
 
   const restarItem = () => {
-    if(numClicks>0) setNumClicks(numClicks - 1);
+    if (numClicks > 0) setNumClicks(numClicks - 1);
   };
 
   const sumarItem = () => {
+    setSeleccion({
+      name: "plato continental: huevos, jamón y queso",
+      description: "Plato continental con quesos, jamones y huevos",
+      type: "desayuno",
+      price: 4990,
+      category: "salado",
+    });
     setNumClicks(numClicks + 1);
   };
 
   return (
     <>
       <div className="flex flex-row">
-        <BotonSelector
-          texto="-"
-          manejarClick={restarItem}
-        />
+        <BotonSelector texto="-" manejarClick={restarItem} />
         <Contador numClicks={numClicks} />
-        <BotonSelector
-          texto="+"
-          manejarClick={sumarItem}
-        />
+        <BotonSelector texto="+" manejarClick={sumarItem} />
       </div>
     </>
   );
