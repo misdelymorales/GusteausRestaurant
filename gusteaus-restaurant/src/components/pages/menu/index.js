@@ -1,7 +1,9 @@
 import React from "react";
 import { Layout } from "../../layout";
 import { ItemComida } from "../../menu/menuItem";
-import {MenuTabs, NavMenu} from "../../menu/tapPrincipal"
+import {MenuTabs } from "../../menu/tapPrincipal"
+import { Fetch } from "../../../firebase/firebase";
+
 
 
 export function Menu() {
@@ -13,7 +15,7 @@ export function Menu() {
         </div>
       </Layout>
       <ItemComida/>
-
+      <Fetch/>
     </>
   );
 }
