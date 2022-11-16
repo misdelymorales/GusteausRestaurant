@@ -2,6 +2,10 @@ import React from "react";
 import { MenuProvider } from "../../../context/menuContext";
 import { Layout } from "../../layout";
 import { ItemComida } from "../../menu/menuItem";
+import {MenuTabs } from "../../menu/tapPrincipal"
+import { Fetch } from "../../../firebase/firebase";
+
+
 import { Resumen } from "../../menu/menuResumen";
 import { MenuTabs, NavMenu } from "../../menu/tapPrincipal";
 
@@ -27,6 +31,8 @@ export function Menu() {
           </div>
         </div>
       </Layout>
+      <ItemComida/>
+      <Fetch/>
     </>
   );
 }
