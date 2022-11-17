@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
+import React, { Component, Suspense } from 'react';
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Home } from "./components/pages/home";
 import { Menu } from "./components/pages/menu";
-import { Routes, Route } from "react-router-dom";
-import db from "./firebase/firebase";
 
 function App() {
   return (
