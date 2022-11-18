@@ -65,8 +65,9 @@ function SelectorMesa() {
             />
           </div>
           <div className="grid grid-cols-4 gap-4">
-            {mesas.map((mesa) => (
+            {mesas.map((mesa, index) => (
               <div
+              key={index}
                 className={
                   mesaActiva.id === mesa.id
                     ? estilosMesaActiva

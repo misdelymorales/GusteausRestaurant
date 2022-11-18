@@ -6,7 +6,7 @@ export function Home() {
     <>
       Inicio
       <Link to="/menu">
-        <button class="bg-sky-500 hover:bg-sky-700 ...">Ir al menú</button>
+        <button className="bg-sky-500 hover:bg-sky-700 ...">Ir al menú</button>
       </Link>
       <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
         <div className="shrink-0">

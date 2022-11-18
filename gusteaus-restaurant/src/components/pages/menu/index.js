@@ -4,8 +4,15 @@ import { Layout } from "../../layout";
 import { ItemComida } from "../../menu/menuItem";
 import { MenuTabs } from "../../menu/tapPrincipal";
 import { Resumen } from "../../menu/menuResumen";
+import { doc } from "firebase/firestore";
+import { useFirestoreDocData, useFirestore } from "reactfire";
 
 export function Menu() {
+  const menuRef = doc(useFirestore(), "menuItems", "0vzMufWSvbATQrKUv7l1");
+
+  // subscribe to a document for realtime updates. just one line!
+  const { status, data, error } = useFirestoreDocData(menuRef);
+
   return (
     <>
       <Layout>

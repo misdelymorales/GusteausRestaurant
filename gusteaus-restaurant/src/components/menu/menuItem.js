@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 import { useState } from "react";
 import { MenuContext } from "../../context/menuContext";
@@ -10,6 +11,7 @@ export function ItemComida() {
 function Item() {
   return (
     <div className={style.contenedorItem.base}>
+           
       <img
         className={style.contenedorItem.itemImagen}
         src="/images/Machas.jpg"
