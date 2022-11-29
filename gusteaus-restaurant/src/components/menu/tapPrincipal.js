@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./tapPrincipal.style"
+import style from "./tapPrincipal.style";
 import {
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,

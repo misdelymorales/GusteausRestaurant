@@ -17,7 +17,6 @@ export const MenuProvider = (props) => {
       (acum, actual) => acum + actual.price,
       0
     );
-    console.log(newTotal);
     setTotal(newTotal);
   };
 

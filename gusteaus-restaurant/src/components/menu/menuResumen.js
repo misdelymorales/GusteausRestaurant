@@ -4,6 +4,7 @@ import style from "./menuResumen.style";
 
 export function Resumen() {
   const {total} = useContext(MenuContext)
+
   return (
     <div className={style.contenedorResumen.base}>
       <div>

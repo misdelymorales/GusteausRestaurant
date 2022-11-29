@@ -1,9 +1,10 @@
-// /** @type {import('tailwindcss').Config} */
+ /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./public/index.html",
-    "./src/*.{js,html}",
-    "./src/components/**/**/*.{js,html}"
+    "./src/*.{js,jsx,html}",
+    "./src/components/**/**/*.{js,jsx}",
+    "./src/context/*.{js,jsx}"
   ],
   theme: {
     fontFamily: ["Lexend Deca", "Poppins"],
@@ -15,9 +16,9 @@ module.exports = {
       //   400: '#2E5D9A', //btn azul
       //   500: '#FFFFFF',
       // },
-      vino: "#742125", //vinotinto
+      "vino": "#742125", //vinotinto
       "vino-light": "rgba(116, 33, 37, 0.54)", //vinotinto con opacidad
-      gray: "#656262",
+      "gray": "#656262",
       "gray-light": "#D9D9D9",
       "blue-light": "#AEB5D0", // btn celente "En Entrega"-cocina
       mustard: "#CA7F09", // btn mostaza "En Preparación"-cocina

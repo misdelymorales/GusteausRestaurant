@@ -6,7 +6,7 @@ import {
   CheckBadgeIcon
 } from "@heroicons/react/24/solid";
 
-export function Layout({ children, withMenu }) {
+export function Layout({ children}) {
   return (
     <>
     <div className={style.layoutContainer}>
@@ -17,7 +17,6 @@ export function Layout({ children, withMenu }) {
             alt="logo"
           />
           <PencilSquareIcon className="h-6 w-6 ml-4" />
-          {/* <img className="block h-8 ml-12" src="/images/edit.svg" alt="edit" /> */}
         </div>
         <div className={style.layoutHeaderRight}>
           <div className=" mx-12 flex items-center">
