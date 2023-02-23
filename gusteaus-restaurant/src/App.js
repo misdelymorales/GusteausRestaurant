@@ -7,8 +7,6 @@ import { Menu } from "./components/pages/menu";
 import { doc, getFirestore } from "firebase/firestore";
 import {
   FirestoreProvider,
-  useFirestoreDocData,
-  useFirestore,
   useFirebaseApp
 } from "reactfire";
 

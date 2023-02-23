@@ -7,4 +7,3 @@ export default {
   appId: "1:229892520596:web:2577d5f0cd01216329d281",
   measurementId: "G-2FBWFB63T3",
 };
-

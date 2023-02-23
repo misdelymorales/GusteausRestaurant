@@ -33,7 +33,11 @@ module.exports = {
       fondo: "linear-gradient(90.22deg, #aeb5d0 27.11%, #ebc2b6 69.07%)", //fondo gradiente
       black: "#000000"
     },
-    extend: {}
+    extend: {
+      backgroundImage: {
+        "login" : "url('/public/images/login.png)"
+      }
+    }
   },
   plugins: []
 };
